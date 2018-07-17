@@ -1,0 +1,222 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+body {
+
+  background-color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  background-size:cover;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  transition: .5s ease;
+  background-color: #f4f6f7;
+}
+
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: #0033a154;
+  color: #fff;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+
+}
+.tab-group li a:hover {
+  background: #0033a1b8;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #0033a1;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  font-weight: 300;
+  margin: 10px 0 40px;
+}
+
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: grey;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 14px;
+}
+label .req {
+  margin: 2px;
+  color: red;
+}
+
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #000;
+  margin-top:-10px;
+}
+
+input {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #80808073;
+  color: black;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus{
+  outline: 0;
+  border-color: #000;
+}
+input:focus{
+  outline: 0;
+  border: 1px solid #000;
+}
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #0033a1;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.button:hover, .button:focus {
+  background: #0033a1;
+}
+.button-block {
+  display: block;
+  width: 40%;
+  margin:auto;
+}
+.buttonform-block {
+  display: inline;
+  width: 25%;
+  margin-left: 50px;
+}
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+  margin-bottom:10px;
+}
+.text-box{
+  width:80%;
+  margin:auto;
+  padding: 10px 10px;
+}
+.formbg{
+  background-color: #f4f6f7;
+  margin: auto;
+}
+.tab-group-form {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-left: 30%;
+}
+.menu{
+  list-style: none;
+  background-color: #0033A1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+}
+.menu li{
+  float: left;
+  margin-right: 20px;
+  padding: 5px;
+}
+.menu li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+.menu li:hover{
+  background-color: #1e1369c7;}
+.text-box-description{
+  background-color: #f4f6f7 !important;
+  width: 100%;
+  padding: 10px 10px;
+}
+textarea {
+    font-family: monospace;
+    border-color: #80808073;
+}
