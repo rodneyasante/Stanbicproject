@@ -159,7 +159,7 @@
 		                	@foreach($beforeprojects as $beforeproject)
 		                	@if($beforeproject->start_date<now())
 		                    <tr>
-		                        <td><a href="{{route('projects.show',$project)}}">{{$beforeproject->event_name}}</a></td>
+		                        <td><a href="{{route('projects.show',$beforeproject)}}">{{$beforeproject->event_name}}</a></td>
 		                        <td>{{$beforeproject->start_date->format('d-m-y')}}</td>
 		                        <td>{{str_limit($beforeproject->description,300)}}</td>
 		                        <td>{{$beforeproject->venue}}</td>
