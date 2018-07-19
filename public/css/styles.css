@@ -272,6 +272,15 @@ input[type=search] {
   background: #0033a1ba;
   color: #fff;
 }
+.carousel-caption{
+    font-weight: bold;
+    font-size: 22px;
+}
+.carousel-text{
+  color: white;
+  margin: 0;
+}
+
 
 /*calender*/
 .widget {

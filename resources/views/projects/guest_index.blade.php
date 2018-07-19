@@ -56,9 +56,9 @@
 					    <img class="img-responsive center-block">
 					    <img src='{{ url('/storage/'.$image=$project->ProjectsPhoto->first()->filename) }}' alt="Slideshow image here." style="width:100%; height:86vh" >
 					    <div class="carousel-caption">
-					       	<h3 style="text-transform: uppercase;"><a href="{{route('projects.show',$project)}}">{{$project->event_name}}</a></h3>
-					        <p>{{$project->start_date->format('d-m-y')}}</p>
-					        <p>{{$project->venue}}</p>
+					       	<h3 style="text-transform: uppercase;"><a class="carousel-text" href="{{route('projects.show',$project)}}">{{$project->event_name}}</a></h3>
+					        <p class="carousel-text">{{$project->start_date->format('d-m-y')}}</p>
+					        <p class="carousel-text">{{$project->venue}}</p>
 					    </div>
 				    </div>
 				    @break($loop->index>=2)

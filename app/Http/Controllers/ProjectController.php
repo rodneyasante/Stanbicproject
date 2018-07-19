@@ -27,7 +27,7 @@ class ProjectController extends Controller
             return view("projects.admin_index")->withProjects(Project::all());
         }
         $projects =  Project::whereDate('start_date', '>',now())->orderBy("start_date")->get();
-        $beforeprojects =  Project::whereDate('start_date', '<',now())->orderBy("start_date")->get();
+        $beforeprojects = Project::whereDate('start_date', '<',now())->orderBy("start_date")->get();
         
         return view("projects.guest_index")->withProjects($projects)->with('beforeprojects',$beforeprojects);
     }
